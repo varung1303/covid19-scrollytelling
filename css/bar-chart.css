@@ -1,0 +1,7 @@
+.bars rect {
+    transition: opacity 0.2s;
+}
+
+.bars rect:hover {
+    opacity: 0.8;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 Scrollytelling</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/scrollytelling.css">
+    <link rel="stylesheet" href="css/visualizations.css">
+    <link rel="stylesheet" href="css/stream-graph.css">
+    <link rel="stylesheet" href="css/tooltips.css">
+    <link rel="stylesheet" href="css/bar-chart.css">
+    <link rel="stylesheet" href="css/custom-bubble-chart.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <div id="covid-theme"></div>
+    <div class="container">
+        <section class="intro">
+            <h1>Understanding the Impact of Covid-19</h1>
+            <p>Scroll down to uncover the story.</p>
+        </section>
+
+        <section class="scrollytelling">
+                <div class="scroll-steps">
+                    <!-- Steps will be dynamically populated -->
+                </div>
+                <div class="sticky-container">
+                    <div id="map" class="viz-container"></div>
+                    <div id="bubble-chart" class="viz-container hidden"></div>
+                    <div id="bar-chart" class="viz-container hidden"></div>
+                    <div id="stream-graph" class="viz-container hidden"></div>
+                </div>
+        </section>
+
+        <section class="outro">
+            <h1>The Journey Continues</h1>
+            <p>This visualization tells the story of how COVID-19 changed our world. While we've made significant progress in understanding and combating the virus, its impact continues to shape our global community. Stay informed, stay safe, and remember that public health is a shared responsibility.</p>
+        </section>
+    </div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/visualization-manager.js"></script>
+    <script src="js/data-processor.js"></script>
+    <script src="js/tooltip-chart.js"></script>
+    <script src="js/choropleth-map.js"></script>
+    <script src="js/bar-chart.js"></script>
+    <script src="js/stream-graph.js"></script>
+    <script src="js/scrollytelling.js"></script>
+    <script src="js/custom-bubble-chart.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+.step {
+    margin: 0 auto 2rem auto;
+    padding: 2rem;
+    background: transparent;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    max-width: 90%;
+    border-radius: 8px;
+}
+
+.step.active {
+    opacity: 1;
+}
+
+.step h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.step.active h3 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.step p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    transition-delay: 0.2s;
+}
+
+.step.active p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: transparent;
+    border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+    .step {
+        font-size: 20px;
+        padding: 2rem;
+        line-height: 1.8;
+    }
+}
