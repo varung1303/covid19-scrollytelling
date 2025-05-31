@@ -63,7 +63,7 @@ The visualization uses several datasets:
 
 1. Clone the repository
 ```bash
-git clone https://github.com/asu-cse578-f2024/covid19-scrollytelling.git
+git clone https://github.com/varung1303/covid19-scrollytelling.git
 ```
 2. Set up a local server (e.g. using Python)
 ```bash
